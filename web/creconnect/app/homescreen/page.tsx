@@ -1,9 +1,8 @@
 "use client";
-//page pages/index.tsx or app/page.tsx (depending on your Next.js version)
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { Search, MapPin, Calendar, Users, Camera } from 'lucide-react';
-
+import { Search, MapPin } from 'lucide-react';
+//page
 interface Studio {
   id: number;
   name: string;
@@ -125,7 +124,7 @@ const CreativeStudioPage: React.FC = () => {
   };
 
   return (
-    <div className="h-full bg-white pt-11">
+    <div className="h-full bg-white">
       {/* Header */}
       <header className="bg-black/90 text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50">
