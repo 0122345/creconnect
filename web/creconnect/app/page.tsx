@@ -34,7 +34,7 @@ export default function Home() {
             <Link href="/homescreen" className="px-4 py-2 rounded border">
               Go to Home
             </Link>
-            <Link href="/studio" className="px-4 py-2 rounded border">
+            <Link href="/dashboards/venuedashboard" className="px-4 py-2 rounded border">
               View a Venue
             </Link>
             <Link href="/dashboards" className="px-4 py-2 rounded border">
