@@ -19,7 +19,7 @@ export default function Home() {
             <Link href="/home" className="px-3 py-2 rounded border">
               Explore
             </Link>
-            <Link href="#" className="px-3 py-2 rounded bg-black text-white">
+            <Link href="/auth" className="px-3 py-2 rounded bg-black text-white">
               Create your space
             </Link>
           </div>
