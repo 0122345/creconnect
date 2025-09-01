@@ -52,7 +52,7 @@ const CreativeStudioPage: React.FC = () => {
       name: 'NYARUGENGE',
       location: 'Nyarugenge District',
       description: 'Studios in Nyarugenge are ideal for photography and video shoots, located right in the city center.',
-      image: '/api/placeholder/300/200',
+      image: '/assets/nyarugenge.png',
       category: 'studio'
     }
   ];
@@ -87,12 +87,12 @@ const CreativeStudioPage: React.FC = () => {
   const studioPartners: Partner[] = [
     { id: 1, name: 'Frame Studio', image: '/api/placeholder/120/120', category: 'studio' },
     { id: 2, name: 'Blackbox', image: '/api/placeholder/120/120', category: 'studio' },
-    { id: 3, name: 'Flash Room', image: '/api/placeholder/120/120', category: 'studio' },
+    { id: 3, name: 'Flash Room', image: '/assets/nyarugenge.png', category: 'studio' },
     { id: 4, name: 'Viewfinder', image: '/api/placeholder/120/120', category: 'studio' }
   ];
 
   const venuePartners: Partner[] = [
-    { id: 5, name: 'Next Venue', image: '/api/placeholder/120/120', category: 'venue' },
+    { id: 5, name: 'Next Venue', image: '/assets/nyarugenge.png', category: 'venue' },
     { id: 6, name: 'The Arts Loft', image: '/api/placeholder/120/120', category: 'venue' },
     { id: 7, name: 'Makers Hall', image: '/api/placeholder/120/120', category: 'venue' },
     { id: 8, name: 'Praxis Space', image: '/api/placeholder/120/120', category: 'venue' }
@@ -102,19 +102,19 @@ const CreativeStudioPage: React.FC = () => {
     {
       id: 1,
       name: 'Agathe',
-      avatar: '/api/placeholder/50/50',
+      avatar: 'https://randomuser.me/api/portraits/women/26.jpg',
       text: 'Our clients can rest assured we have professional and creative their about their projects.'
     },
     {
       id: 2,
       name: 'Frank',
-      avatar: '/api/placeholder/50/50',
+      avatar: 'https://randomuser.me/api/portraits/men/5.jpg',
       text: 'For this chance, they get will to see great result and get value that corresponds to their projects.'
     },
     {
       id: 3,
       name: 'Daniel',
-      avatar: '/api/placeholder/50/50',
+      avatar: 'https://randomuser.me/api/portraits/men/39.jpg',
       text: 'Sometimes, you just need one item from you and put more money in your business'
     }
   ];

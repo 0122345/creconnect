@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import AuthCard from "@/pages/components/auth/AuthCard";
+import Link from "next/link";
 
 export default function AuthPage() {
   const [isLogin, setIsLogin] = useState(true);
@@ -10,10 +11,12 @@ export default function AuthPage() {
     <div className="min-h-screen flex flex-col justify-between bg-white">
       {/* Header */}
       <div className="flex justify-end p-6">
+      <Link href="/">
         <button className="flex items-center gap-2 bg-black text-white px-4 py-2 rounded-md shadow-md hover:opacity-80 transition">
           <span className="material-icons">home</span>
           BACK TO HOME
         </button>
+        </Link>
       </div>
 
       {/* Auth Section */}
