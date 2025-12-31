@@ -5,12 +5,13 @@ type Props = {
 };
 
 function initials(name: string) {
+  if (!name) return "";
   const parts = name.trim().split(/\s+/);
   const [a, b] = [parts[0]?.[0], parts[1]?.[0]];
   return (a || "") + (b || "");
 }
 
-export function FeedbackItem({ name, time, feedback }: Props) {
+export default function FeedbackItem({ name, time, feedback }: Props) {
   return (
     <div className="flex gap-3">
       <div className="w-10 h-10 rounded-full bg-indigo-100 text-indigo-700 grid place-items-center font-semibold">

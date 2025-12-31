@@ -28,7 +28,7 @@ function ProgressBar({value}: {value: number}) {
 }
 
 
-export function CategoryPerformance() {
+export default function CategoryPerformance() {
   return (
     <div className="bg-white p-4 rounded-xl shadow">
       <h2 className="font-semibold mb-4 flex items-center gap-2">

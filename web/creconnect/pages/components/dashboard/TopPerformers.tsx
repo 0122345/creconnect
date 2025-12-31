@@ -14,7 +14,7 @@ const top: Performer[] = [
   { rank: 4, name: "Umoja studio", kind: "Studio", rating: 4.9, revenue: 2000, bookings: 30 },
 ];
 
-export function TopPerformers() {
+export default function TopPerformers() {
   return (
     <div className="bg-white p-4 rounded-xl shadow">
       <h2 className="font-semibold mb-4 flex items-center gap-2">

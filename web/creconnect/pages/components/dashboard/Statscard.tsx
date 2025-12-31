@@ -4,7 +4,7 @@ type Props = {
   icon?: string;
 };
 
-export function StatsCard({ title, value, icon }: Props) {
+export default function StatsCard({ title, value, icon }: Props) {
   return (
     <div className="bg-white p-4 rounded-xl shadow flex items-center justify-between">
       <div>

@@ -1,8 +1,8 @@
 "use client";
 import React from 'react'
-import CreativeStudioPage from '../homescreen/page'
 import AuthPage from '../page'
 import AuthCard from '@/pages/components/auth/AuthCard'
+import CreativeStudioPage from '../page';
 
 export default function LoginPage() {
   return (

@@ -24,7 +24,7 @@ function Bar({ value }: { value: number }) {
   );
 }
 
-export function GeographicInsights() {
+export default function GeographicInsights() {
   return (
     <div className="bg-white p-4 rounded-xl shadow">
       <h2 className="font-semibold mb-4 flex items-center gap-2">

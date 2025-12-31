@@ -12,7 +12,7 @@ const items: Item[] = [
   { label: "Platform Settings", sub: "", icon: "⚙️" },
 ];
 
-export function PlatformManagement() {
+export default function PlatformManagement() {
   return (
     <div className="bg-white p-4 rounded-xl shadow">
       <h2 className="font-semibold mb-4">Platform Management</h2>

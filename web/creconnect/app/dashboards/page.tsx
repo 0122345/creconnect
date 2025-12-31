@@ -1,10 +1,10 @@
-import { ActivityItem } from "../../pages/components/dashboard/ActivityItem";
-import { CategoryPerformance } from "../../pages/components/dashboard/CartegoryPerformance";
-import { FeedbackItem } from "../../pages/components/dashboard/FeedbackItem";
-import { GeographicInsights } from "../../pages/components/dashboard/GeographicInsights";
-import { PlatformManagement } from "../../pages/components/dashboard/PlatformManagement";
-import { StatsCard } from "../../pages/components/dashboard/Statscard";
-import { TopPerformers } from "../../pages/components/dashboard/TopPerformers";
+import ActivityItem from "@/pages/components/dashboard/ActivityItem";
+import CategoryPerformance from "@/pages/components/dashboard/CartegoryPerformance";
+import FeedbackItem from "@/pages/components/dashboard/FeedbackItem";
+import GeographicInsights from "@/pages/components/dashboard/GeographicInsights";
+import PlatformManagement from "@/pages/components/dashboard/PlatformManagement";
+import StatsCard from "@/pages/components/dashboard/Statscard";
+import TopPerformers from "@/pages/components/dashboard/TopPerformers";
 import  Link  from "next/link";
  
 export default function DashboardPage() {

@@ -6,7 +6,7 @@ type Props = {
 }
 
 
-export function ActivityItem({name, action, time, amount}: Props){
+export default function ActivityItem({name, action, time, amount}: Props){
      return (
           <div className="flex justify-between items-center text-sm">
                <div className="">
