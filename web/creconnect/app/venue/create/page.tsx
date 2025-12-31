@@ -4,9 +4,7 @@ import Footer from "@/pages/components/Footer";
 import ImageGallery from "@/pages/components/ImageGallery";
 import LocationMap from "@/pages/components/LocationMap";
 import VenueInfo from "@/pages/components/VenueInfo";
-
- 
-
+import Link from "next/link";
 export default function VenuePage() {
   return (
     <>

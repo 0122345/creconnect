@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function BookingForm() {
@@ -33,7 +34,9 @@ export default function BookingForm() {
           type="submit"
           className="bg-green-600 text-white py-2 rounded-lg font-medium hover:bg-green-700"
         >
-          Request to book
+          <Link href="/dashboards" className="block w-full h-full">
+            Request to book
+          </Link>
         </button>
         <p className="text-xs text-gray-400 text-center">
           You won’t be charged yet

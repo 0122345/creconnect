@@ -5,18 +5,42 @@ interface Props {
   type: "login" | "signup";
 }
 
+import Link from "next/link";
+
 export default function AuthForm({ type }: Props) {
   const [showPassword, setShowPassword] = useState(false);
+  const [formData, setFormData] = useState({
+    username: '',
+    email: '',
+    password: ''
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Handle form submission
+    console.log('Form submitted:', formData);
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
 
   return (
-    <form className="space-y-4">
+    <form className="space-y-4" onSubmit={handleSubmit}>
       {type === "signup" && (
         <div className="relative">
           <User className="absolute left-3 top-3 text-gray-400" size={18} />
           <input
             type="text"
+            name="username"
             placeholder="Username"
+            value={formData.username}
+            onChange={handleInputChange}
             className="w-full pl-10 pr-3 py-2 border rounded-md focus:outline-none"
+            required
           />
         </div>
       )}
@@ -25,8 +49,12 @@ export default function AuthForm({ type }: Props) {
         <Mail className="absolute left-3 top-3 text-gray-400" size={18} />
         <input
           type="email"
+          name="email"
           placeholder="Email"
+          value={formData.email}
+          onChange={handleInputChange}
           className="w-full pl-10 pr-3 py-2 border rounded-md focus:outline-none"
+          required
         />
       </div>
 
@@ -34,8 +62,12 @@ export default function AuthForm({ type }: Props) {
         <Lock className="absolute left-3 top-3 text-gray-400" size={18} />
         <input
           type={showPassword ? "text" : "password"}
+          name="password"
           placeholder="Password"
+          value={formData.password}
+          onChange={handleInputChange}
           className="w-full pl-10 pr-10 py-2 border rounded-md focus:outline-none"
+          required
         />
         <button
           type="button"
@@ -52,12 +84,14 @@ export default function AuthForm({ type }: Props) {
         </div>
       )}
 
-      <button
-        type="submit"
-        className="w-full bg-black text-white py-2 rounded-md hover:opacity-80"
-      >
-        {type === "login" ? "Login" : "Sign up"}
-      </button>
+      <Link href="/dashboards">
+        <button
+          type="submit"
+          className="w-full bg-black text-white py-2 rounded-md hover:opacity-80"
+        >
+          {type === "login" ? "Login" : "Sign up"}
+        </button>
+      </Link>
 
       <div className="flex items-center my-4">
         <div className="flex-1 border-t"></div>

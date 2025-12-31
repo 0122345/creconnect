@@ -5,7 +5,7 @@ import { GeographicInsights } from "../../pages/components/dashboard/GeographicI
 import { PlatformManagement } from "../../pages/components/dashboard/PlatformManagement";
 import { StatsCard } from "../../pages/components/dashboard/Statscard";
 import { TopPerformers } from "../../pages/components/dashboard/TopPerformers";
-
+import  Link  from "next/link";
  
 export default function DashboardPage() {
   return (
@@ -18,6 +18,7 @@ export default function DashboardPage() {
         </div>
         <button className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-indigo-600 text-white shadow shadow-md shadow-black hover:bg-indigo-700 active:bg-indigo-800">
           <span className="text-lg leading-none">＋</span>
+          <Link href="/studio/CreateStudio"></Link>
           <span>Manage Platform</span>
           </button>
       </div>

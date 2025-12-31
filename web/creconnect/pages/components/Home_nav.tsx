@@ -8,7 +8,7 @@ export default function HomeNavi() {
           <span className=""> Type as space</span>
           <span className=""> Activity</span>
           <span className=""> Date & time</span>
-          <span className="bg-white border border-1 border-solid border-white text-black h-[48px] "> Search</span>
+          <span className="bg-white border border-1 border-solid border-white text-black h-[48px]"> Search</span>
        </div>
     </main>
   )

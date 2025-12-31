@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import { Heart, Search, MapPin, Phone, Mail, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import Link from 'next/link';
 
 interface Studio {
   id: number;
@@ -155,13 +156,17 @@ const DiscoverStudiosPage: React.FC = () => {
               </h1>
             </div>
             <div className="flex items-center space-x-4">
-              <button className="bg-black text-white px-4 py-2 rounded-lg flex items-center">
-                <span className="mr-2">⊙</span>
-                Explore
-              </button>
-              <button className="border border-gray-300 text-gray-700 px-4 py-2 rounded-lg">
-                Create your space
-              </button>
+              <Link href="/studio">
+                <button className="bg-black text-white px-4 py-2 rounded-lg flex items-center">
+                  <span className="mr-2">⊙</span>
+                  Explore
+                </button>
+              </Link>
+              <Link href="/studio/create">
+                <button className="border border-gray-300 text-gray-700 px-4 py-2 rounded-lg">
+                  Create your space
+                </button>
+              </Link>
             </div>
           </div>
         </div>

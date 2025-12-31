@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎨 CreConnect  
 
-## Getting Started
+CreConnect is a web platform designed to empower artists by providing them with a digital space to **showcase their art, create studio/venue profiles, and connect with visitors**. Whether you're a painter, photographer, sculptor, or performer, CreConnect gives you the tools to share your work with the world and build meaningful connections.  
 
-First, run the development server:
+---
+
+## 🚀 Features  
+
+- **Artist Profiles** – Create a professional portfolio with bio, profile picture, and contact info.  
+- **Studios & Venues** – Open virtual spaces to represent your studio, gallery, or performance venue.  
+- **Artwork Uploads** – Upload and manage your artwork with high-quality images and descriptions.  
+- **Visitor Interaction** – Allow visitors to browse, admire, and engage with your art.  
+- **Discovery & Exploration** – Explore other artists, studios, and events within the CreConnect community.  
+- **Responsive Design** – Fully optimized for desktop, tablet, and mobile devices.  
+
+---
+
+## 🎯 Vision  
+
+CreConnect’s mission is to **bridge the gap between artists and their audience** by creating a platform where art can be freely displayed, celebrated, and discovered globally.  
+
+---
+
+## 🛠️ Tech Stack  
+
+- **Frontend:** React (Next.js) + Tailwind CSS  
+- **Backend:** Node.js (Express) + Prisma  
+- **Database:** PostgreSQL / MySQL  
+- **Authentication:** JWT / OAuth  
+- **Deployment:** Vercel (Frontend) + Render / Railway (Backend)  
+
+---
+
+## 📦 Installation  
+
+1. Clone the repository:  
+
+   ```bash
+   git clone https://github.com/0122345/creconnect.git
+   cd creconnect
+     ```
+
+2. Install dependencies (using npm or pnpm):
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+     npm install
+     # or
+     pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Set up environment variables:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Create a .env file in the root directory with the following:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```bash
+     DATABASE_URL=your_database_url
+     JWT_SECRET=your_secret_key
+     NEXT_PUBLIC_API_URL=http://localhost:5000
+```
 
-## Learn More
+Run database migrations (if using Prisma):
 
-To learn more about Next.js, take a look at the following resources:
+``` bash
+ npx prisma migrate dev
+  ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Start development server:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+ npm run dev 
+```
 
-## Deploy on Vercel
+📸 Screenshots
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+(Add screenshots of your app here: homepage, artist profile, studio page, etc.)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📄 License
+
+This project is licensed under the MIT License.
+
+🌟 Acknowledgements
+
+All artists who inspire creativity every day
+
+📬 Contact
+
+For inquiries, feedback, or collaborations:
+Email: <elogechris3@gmail.com>
+
+Website: <www.creconnect.com>
+
+---
